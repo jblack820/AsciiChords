@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" minHeight="600.0" minWidth="800.0" spacing="20.0" style="-fx-background-color: #AAAAAA;"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.asciichords.Controller">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+   </padding>
+   <Pane prefHeight="558.0" prefWidth="760.0">
+      <children>
+         <VBox layoutX="100.0" prefHeight="168.0" prefWidth="168.0">
+            <children>
+               <ComboBox fx:id="box1" prefWidth="150.0"/>
+               <ComboBox fx:id="box2" prefWidth="150.0"/>
+               <ComboBox fx:id="box3" prefWidth="150.0"/>
+               <ComboBox fx:id="box4" prefWidth="150.0"/>
+               <ComboBox fx:id="box5" prefWidth="150.0"/>
+               <ComboBox fx:id="box6" prefWidth="150.0"/>
+            </children>
+         </VBox>
+         <VBox layoutX="20.0" prefHeight="153.0" prefWidth="65.0">
+            <children>
+               <Label prefHeight="25.0" prefWidth="50.0" text="High E">
+                  <padding>
+                     <Insets bottom="4.0" left="5.0" right="5.0" top="4.0"/>
+                  </padding>
+               </Label>
+               <Label prefHeight="25.0" prefWidth="50.0" text="H">
+                  <padding>
+                     <Insets bottom="4.0" left="5.0" right="5.0" top="4.0"/>
+                  </padding>
+               </Label>
+               <Label prefHeight="25.0" prefWidth="50.0" text="G">
+                  <padding>
+                     <Insets bottom="4.0" left="5.0" right="5.0" top="4.0"/>
+                  </padding>
+               </Label>
+               <Label prefHeight="25.0" prefWidth="50.0" text="D">
+                  <padding>
+                     <Insets bottom="4.0" left="5.0" right="5.0" top="4.0"/>
+                  </padding>
+               </Label>
+               <Label prefHeight="25.0" prefWidth="50.0" text="A">
+                  <padding>
+                     <Insets bottom="4.0" left="5.0" right="5.0" top="4.0"/>
+                  </padding>
+               </Label>
+               <Label prefHeight="25.0" prefWidth="50.0" text="E">
+                  <padding>
+                     <Insets bottom="4.0" left="5.0" right="5.0" top="4.0"/>
+                  </padding>
+               </Label>
+            </children>
+         </VBox>
+         <Button layoutX="20.0" layoutY="194.0" mnemonicParsing="false" onAction="#buttonClicked" prefHeight="25.0"
+                 prefWidth="232.0" style="-fx-background-color: lightgreen;" text="Create ASCII Chord"/>
+         <TextArea fx:id="ta" layoutX="315.0" prefHeight="360.0" prefWidth="406.0">
+            <font>
+               <Font size="18.0"/>
+            </font>
+         </TextArea>
+      </children>
+   </Pane>
+</VBox>
